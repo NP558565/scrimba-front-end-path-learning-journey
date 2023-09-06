@@ -1,7 +1,7 @@
-## Scrimba Web Devlopment Training Platform
+## Scrimba Web Development Training
 
 This repo contains all my work , tutorials and projects on different 
-Software deveopment topics, which I have completed while I was on the
+Software Development topics, which I have completed while I was on the
 Scrimba Web Developer training.
 
 ----------------------------------------------------------------------------------------
