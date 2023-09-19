@@ -1,4 +1,4 @@
-## Scrimba Web Development Training
+## Scrimba Web Development path Cirriculum
 
 This repo contains all my work , tutorials and projects on different 
 Software Development topics, which I have completed while I was on the
