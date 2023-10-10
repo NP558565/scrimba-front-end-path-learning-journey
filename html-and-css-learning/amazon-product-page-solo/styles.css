@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.title {
+    font-weight: lighter;
+}
+
+.navigation {
+    color: #565959;
+}
+
+.main-img {
+    box-shadow: 0px 2px 5px lightgray;
+    width: 300px;
+}
+
+.link {
+    color: #007185;
+}
+
+.ratings-img {
+    width: 150px;
+}
+
+.columns {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right_box {
+    margin-left: 30px;
+}
