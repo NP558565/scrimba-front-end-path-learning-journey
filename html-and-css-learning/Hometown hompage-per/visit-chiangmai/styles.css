@@ -1,0 +1,130 @@
+:root {
+    --RED: #E63946;
+    --LIGHT: #F1FAEE;
+    --AQUA: #A8DADC;
+    --LIGHT-BLUE: #457B9D;
+    --DARK-BLUE: #1D3557;
+
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--DARK-BLUE);
+    font-family: 'Cabing', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+img {
+    width: 200px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center / cover url(images/chiangmai.jpg);
+    color: #ffffff;
+    height: 400px;
+}
+
+.hero__content {
+    border-radius: 10px;
+    padding: 0.5em 0.75em;
+}
+
+#hero__title {
+    background-color: var(--DARK-BLUE); 
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+#hero__subtitle {
+    background-color: var(--LIGHT-BLUE);
+    font-size: 1rem;
+    margin: 0 1em;
+    max-width: 365px;
+    
+}
+
+#activities {
+    margin: 0 auto;
+    padding: 2rem 1.5rem 1em;
+    background-color: var(--LIGHT);
+}
+
+#activities___header {
+    margin-bottom: 2em;
+}
+
+.activities__img {
+    border-radius: 100%;
+}
+
+.activities__content {
+    margin-top: .75em;
+}
+
+.activities__content--p {
+    margin-bottom: 3em; 
+}
+
+#card__tour-guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--AQUA);
+    border-bottom: 0.75em solid var(--DARK-BLUE);
+    border-radius: 10px;
+    width: 70vw;
+}
+
+.card___tour-guide--content {
+    margin: 0.75em 0;
+}
+
+.card__item {
+    margin: 0 0.5em;
+}
+
+#tour-guide-img {
+    border-radius: 10px;
+    width: 100px;
+}
+
+@media (min-width: 1000px) {
+    #hero__title {
+        font-size: 1.5rem;
+    }
+
+    #hero__subtitle {
+        font-size: 1rem; 
+    }
+
+    .activities__activities--item {
+        margin: 0 5px;
+        flex: 1 1 0px;
+    }
+
+    #activities__activities-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1028px;
+    }
+
+    #card__tour-guide {
+        max-width: 700px;
+    }  
+
+    #tour-guide-img {
+        width: 150px;
+    }
+}
