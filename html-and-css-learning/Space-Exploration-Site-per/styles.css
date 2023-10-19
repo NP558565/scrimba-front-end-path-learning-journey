@@ -1,0 +1,70 @@
+body {
+    color: #CFC1C6;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    
+    /* 
+    Set the font family here. 
+    */
+}
+
+.hero {
+        background-image: url("images/galaxy.gif");
+        background-size: cover;
+        width: auto;
+        height: auto;
+        padding: 10px 0px 400px 0px;
+        /* the background has this weird distance between edges. Took awhile because forgot that I can put negative to the value */
+        margin: -9px; 
+        text-shadow: 0px 0px 25px whitesmoke;
+        /*           ➡️  ⬇️ blur color */
+        
+    }
+    
+
+
+.btn {
+    padding: 6px 12px;
+    background: white;
+    border: none;
+    font-family: teroxia;
+    font-weight: 800px;
+    
+     /* 
+    You also can do font-family: inherit;
+    */
+}
+
+#logo {
+    width: 200px;
+}
+
+.btn:link {
+    background: blue;
+}
+
+.btn:visited{
+    background: red;
+}
+
+.btn:hover {
+    background: green;
+}
+
+.btn:active{
+    background: yellow;
+}
+   
+@font-face {
+    src: url("font/TeroxiaDemo-PersonalUse.otf");
+    font-family: teroxia;
+}
+
+.underline{
+    border-bottom: 4px solid #CFC1C6;
+}
+
+
+.term{
+    color: #2b2d42;
+}
