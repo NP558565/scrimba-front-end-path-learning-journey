@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+
+/*use auto-fit and minmax(value here) in columns*/
