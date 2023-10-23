@@ -1,0 +1,12 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+
+  /* flex-direction: ; */
+
+  /* flex-start flex-end center space-around
+space-between space-evenly */
+
+/*postion itesm using margin*/
+
+ /*flex-grow, flex-shrink, flex-basis */

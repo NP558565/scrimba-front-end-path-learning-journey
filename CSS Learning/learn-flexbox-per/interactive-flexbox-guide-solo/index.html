@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Interactive Flexbox</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="flexbox">
+      <div class="box" id="box1">I am flexbox item 1.</div>
+      <div class="box" id="box2">I am flexbox item 2.</div>
+      <div class="box" id="box3">I am flexbox item 3.</div>
+    </div>
+    <div id="controls">
+      <div>
+        <label>Flex direction</label>
+        <select id="direction">
+          <option value="row" selected="selected">row</option>
+          <option value="column">column</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+        <label>Justify content</label>
+        <select id="justifycontent">
+          <option value="center" selected="selected">center</option>
+          <option value="space-around">space-around</option>
+          <option value="space-between">space-between</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+        </select>
+        <label>Align items</label>
+        <select id="alignitems">
+          <option value="center" selected="selected">center</option>
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+        </select>
+      </div>
+      <p><em>You will only see the following properties in action if you have more boxes than fit in one line.</em></p>
+      <div>
+        <label>Flex wrap</label>
+        <select id="wrap">
+          <option value="nowrap" selected="selected">nowrap</option>
+          <option value="wrap">wrap</option>
+          <option value="wrap-reverse">wrap-reverse</option>
+        </select>
+        <label>Align content</label>
+        <select id="aligncontent">
+          <option value="center" selected="selected">center</option>
+          <option value="space-around">space-around</option>
+          <option value="space-between">space-between</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+        </select>
+      </div>
+      <div>
+        <button id="addbox">Add box</button>
+        <button id="removebox">Remove box</button>
+      </div>
+    </div>
+    <footer>Brought to you by Arielle Vaniderstine. Find me on <a href="https://github.com/arirawr">Github</a> and <a href="https://twitter.com/imariari">Twitter</a>.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
