@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bootstrap Flex Utilities Examples 3</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+            .container {
+                margin: 20px;
+            }
+
+            .flex-item {
+                background-color: #d3d3d3;
+                border: 1px solid #9d9d9d;
+            }
+
+            .flex-box-auto {
+                background-color: #d3d3d3;
+                border: 1px solid #9d9d9d;
+            }
+
+            .flex-item-auto {
+                background-color: #9d9d9d;
+                border: 1px solid #828282;
+            }
+        </style>
+   </head>
+   <body>
+        <h2 class="m-3">Bootstrap Flex Utilities Examples - Page 3</h2>
+
+        <hr>
+
+        <!-- Use the `.flex-fill` class on a series of sibling elements to force them into widths equal to their content
+             (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal
+             space. -->
+
+        <div class="container">
+            <h3 class="mb-2">Flex Utilities Example 07</h3>
+
+            <p class="fs-5 mb-3">Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal 
+                to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available 
+                horizontal space.</p>
+
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-fill bd-highlight flex-item">Flex item with a lot of content</div>
+                <div class="p-2 flex-fill bd-highlight flex-item">Flex item</div>
+                <div class="p-2 flex-fill bd-highlight flex-item">Flex item</div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Use `.flex-grow-*` utilities to toggle a flex item's ability to grow to fill available space. In this example,
+             the `.flex-grow-1` element uses all available space it can, while allowing the remaining two flex items their
+             necessary space. -->
+
+        <div class="container">
+            <h3 class="mb-2">Flex Utilities Example 08</h3>
+
+            <p class="fs-5 mb-3">Use <code>.flex-grow-*</code> utilities to toggle a flex item's ability to grow to fill available space. 
+                In this example, the <code>.flex-grow-1</code> element uses all available space it can, while allowing the remaining 
+                two flex items their necessary space.</p>
+
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight flex-item">Flex item</div>
+                <div class="p-2 bd-highlight flex-item">Flex item</div>
+                <div class="p-2 bd-highlight flex-item">Third flex item</div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Use `.flex-shrink-*` utilities to toggle a flex item's ability to shrink. In this example, the second flex item with 
+             `.flex-shrink-1` is forced to wrap its contents to a new line, "shrinking" to allow more space for the previous flex 
+             item with `.w-100`. -->
+
+        <div class="container">
+            <h3 class="mb-2">Flex Utilities Example 09</h3>
+
+            <p class="fs-5 mb-3">Use <code>.flex-shrink-*</code> utilities to toggle a flex item's ability to shrink, if necessary. In
+                this example, the second flex item with <code>.flex-shrink-1</code> is forced to wrap its contents to a new line,
+                "shrinking" to allow more space for the previous flex item with <code>.w-100</code>.</p>
+
+            <div class="d-flex bd-highlight">
+                <div class="p-2 w-100 bd-highlight flex-item">Flex item</div>
+                <div class="p-2 flex-shrink-1 bd-highlight flex-item">Flex item</div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Flexbox works amazingly when you mix flex alignments with auto margins. Shown below are three examples
+             of controlling flex items via auto margins: default (no auto margin), pushing two items to the right
+             (`.me-auto`), and pushing two items to the left (`.ms-auto`). -->
+
+             <div class="container">
+                <h3 class="mb-2">Flex Utilities Example 10</h3>
+    
+                <p class="fs-5 mb-3">Flexbox works amazingly when you mix flex alignments with auto margins. Shown below are 
+                    three examples of controlling flex items via auto margins: default (no auto margin), pushing two items 
+                    to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).</p>
+    
+                <div class="d-flex bd-highlight mb-3 flex-box-auto">
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                </div>
+                
+                <div class="d-flex bd-highlight mb-3 flex-box-auto">
+                    <div class="me-auto p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                </div>
+                
+                <div class="d-flex bd-highlight mb-3 flex-box-auto">
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="p-2 bd-highlight flex-item-auto">Flex item</div>
+                    <div class="ms-auto p-2 bd-highlight flex-item-auto">Flex item</div>
+                </div>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   </body>
+</html>

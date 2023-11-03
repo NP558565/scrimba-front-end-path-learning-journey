@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bootstrap Position Utilities Examples 1</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+            .container {
+                margin: 20px;
+            }
+
+            .container-fluid {
+                border: 1px solid #9d9d9d;
+            }
+
+            .position-relative {
+                background-color: #f5f5f5;
+                height: 200px;
+            }
+
+            .position-absolute {
+                width: 2em;
+                height: 2em;
+                background-color: #212529;
+                border-radius: .25rem;
+            }
+
+            .box-2 {
+                margin-left: -10px;
+            }
+
+            .box-3 {
+                margin-left: -15px;
+            }
+        </style>
+   </head>
+   <body>
+        <h2 class="m-3">Bootstrap Position Utilities Examples</h2>
+
+        <hr>
+
+        <!-- Arrange elements easily with the edge positioning utilities. The format is `{property}-{position}`. -->
+
+        <div class="container">
+            <h3 class="mb-2">Position Utilities Example 01</h3>
+
+            <p class="fs-5 mb-3">Arrange elements easily with the edge positioning utilities. The format is <code>{property}-{position}</code>.</p>
+
+            <!-- The "position" <div>s below can only be displayed one at a time, apparently. So comment/uncomment each single
+                 <div> line of code with the "position-relative" <div> one at a time to see them displayed. -->
+
+            <div class="container-fluid mb-3 p-4">
+                <div class="position-relative">
+                    <div class="position-absolute top-0 start-0">
+                    <!-- <div class="position-absolute top-0 end-0"> -->
+                    <!-- <div class="position-absolute top-50 start-50"> -->
+                    <!-- <div class="position-absolute bottom-50 end-50"> -->
+                    <!-- <div class="position-absolute bottom-0 start-0"> -->
+                    <!-- <div class="position-absolute bottom-0 end-0"> -->
+                </div>
+            </div>  
+        </div>
+        <hr>
+
+        <!-- Elements can be centered with the transform utility class `.translate-middle`.
+             This class applies the transformations `translateX(-50%)` and `translateY(-50%)` to the element which,
+             in combination with the edge positioning utilities, allows you to absolute center an element. -->
+
+        <div class="container box-2">
+            <h3 class="mb-2">Position Utilities Example 02</h3>
+
+            <p class="fs-5 mb-3">Elements can be centered with the transform utility class <code>.translate-middle</code>.
+                This class applies the transformations <code>translateX(-50%)</code> and <code>translateY(-50%)</code> to the element 
+                which, in combination with the edge positioning utilities, allows you to absolute center an element.</p>
+
+            <!-- The "position" <div>s below can only be displayed one at a time, apparently. So comment/uncomment each single
+                 <div> line of code with the "position-relative" <div> one at a time to see them displayed. -->
+
+            <div class="container-fluid mb-3 p-4">
+                <div class="position-relative">
+                    <div class="position-absolute top-0 start-0 translate-middle">
+                    <!-- <div class="position-absolute top-0 start-50 translate-middle"> -->
+                    <!-- <div class="position-absolute top-0 start-100 translate-middle"> -->
+                    <!-- <div class="position-absolute top-50 start-0 translate-middle"> -->
+                    <!-- <div class="position-absolute top-50 start-50 translate-middle"> -->
+                    <!-- <div class="position-absolute top-50 start-100 translate-middle"> -->
+                    <!-- <div class="position-absolute top-100 start-0 translate-middle"> -->
+                    <!-- <div class="position-absolute top-100 start-50 translate-middle"> -->
+                    <!-- <div class="position-absolute top-100 start-100 translate-middle"> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- By adding `.translate-middle-x` or `.translate-middle-y` classes, elements can be positioned only in
+             horizontal or vertical direction. -->
+
+        <div class="container box-3">
+            <h3 class="mb-2">Position Utilities Example 03</h3>
+
+            <p class="fs-5 mb-3">By adding <code>.translate-middle-x</code> or <code>.translate-middle-y</code> classes, elements can be 
+                positioned only in horizontal or vertical direction.</p>
+
+            <!-- The "position" <div>s below can only be displayed one at a time, apparently. So comment/uncomment each single
+                 <div> line of code with the "position-relative" <div> one at a time to see them displayed. -->
+
+            <div class="container-fluid mb-3 p-4">
+                <div class="position-relative">
+                    <!-- <div class="position-absolute top-0 start-0"> -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x">
+                    <!-- <div class="position-absolute top-0 end-0"> -->
+                    <!-- <div class="position-absolute top-50 start-0 translate-middle-y"> -->
+                    <!-- <div class="position-absolute top-50 start-50 translate-middle"> -->
+                    <!-- <div class="position-absolute top-50 end-0 translate-middle-y"> -->
+                    <!-- <div class="position-absolute bottom-0 start-0"> -->
+                    <!-- <div class="position-absolute bottom-0 start-50 translate-middle-x"> -->
+                    <!-- <div class="position-absolute bottom-0 end-0"> -->
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   </body>
+</html>

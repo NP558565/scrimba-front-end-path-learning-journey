@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bootstrap Breakpoints Example</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <style>
+            .container {
+                margin: 20px;
+            }
+
+            .col {
+                border: 2px solid #828282;
+            }
+
+            .first {
+                background-color: #FFC0CB;
+            }
+
+            .second {
+                background-color: #ADD8E6;
+            }
+
+            .third {
+                background-color: #EE82EE;
+            }
+        </style>
+   </head>
+   <body>
+        <h2 class="m-3">Bootstrap Breakpoints Layout Code Example</h2>
+
+        <hr>
+
+        <div class="container">
+            <h3 class="mb-4">Adjust the width of the screen to make the screen smaller or larger to see how breakpoints work on the 
+                columns below.</h3>
+            <div class="row mb-3">
+                <div class="col first p-3">
+                    This is a single column.
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col col-xl-6 second p-3">
+                    This is the first column.
+                </div>
+                <div class="col col-xl-6 second p-3">
+                    This is the second column.
+                </div>
+            </div>
+            <div class="row third-row">
+                <div class="col col-xl-3 third p-3">
+                    This is the first column.
+                </div>
+                <div class="col col-xl-3 third p-3">
+                    This is the second column.
+                </div>
+                <div class="col col-xl-3 third p-3">
+                    This is the third column.
+                </div>
+                <div class="col col-xl-3 third p-3">
+                    This is the fourth column.
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   </body>
+</html>
