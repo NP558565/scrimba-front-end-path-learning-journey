@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bootstrap Navs and Tabs Component Examples 3</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+            .container {
+                margin: 20px;
+            }
+        </style>
+   </head>
+   <body>
+        <h2 class="m-3">Bootstrap Navs and Tabs Component Examples - Page 3</h2>
+
+        <hr>
+
+        <!-- To create responsive nav variations, use a series of flexbox utilities, which offer greater customization
+             across responsive breakpoints. This example will stack the nav items at the lowest breakpoint, then adapt
+             to a horizontal layout which fills the available width. -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 11</h3>
+
+            <p class="fs-5 mb-3">To create responsive nav variations, use a series of flexbox utilities, which offer greater customization
+                across responsive breaekpoints. This example will stack the nav items at the lowest breakpoint, then adapt
+                to a horizontal layout which fills the available width.</p>
+
+            <nav class="nav nav-pills flex-column flex-sm-row" style="border: 1px solid #d3d3d3; padding: 15px;">
+                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+                <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </nav>
+        </div>
+        <hr>
+
+        <!--  Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 12</h3>
+
+            <p class="fs-5">Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.</p>
+            
+            <p class="fs-5 mb-3">Tabs with dropdowns.</p>
+
+            <ul class="nav nav-tabs mb-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <hr>
+
+            <p class="fs-5 mb-3">Pills with dropdowns.</5>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+
+        <!-- Use the tab JavaScript plugin to extend Bootstrap's navigational tabs and pills to create tabbable panes of 
+             local content -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 13</h3>
+
+            <p class="fs-5 mb-3">Use the tab JavaScript plugin to extend Bootstrap's navigational tabs and pills to create tabbable panes 
+                of local content.</p>
+
+            <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the home tab.</strong> Takes you miles high, 
+                        so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my 
+                        head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning 
+                        battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause 
+                        its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the profile tab.</strong> You got the finest 
+                        architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that 
+                        one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, 
+                        I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! 
+                        But you'd rather get wasted.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the contact tab.</strong> Her love is like 
+                        a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and 
+                        the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm 
+                        walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. 
+                        Stinging like a bee I earned my stripes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Dynamic tabbed interfaces require `role="tablist"`, `role="tab"`, `role="tabpanel"`, and additional `aria-`
+             attributes in order to convey their structure, functionality, and current state to users of assistive
+             technologies. It's recommended to use <button> elements for the tabs, like this example and the one above.
+             However, if you're using <nav>, you shouldn't add `role="tablist"` directly to it, as this would override
+             the element's native role as a navigation landmark. Instead, switch to an alternative element, like a <div>,
+             and wrap the <nav> around it. -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 14</h3>
+
+            <p class="fs-5 mb-3">Dynamic tabbed interfaces require <code>role="tablist"</code>, <code>role="tab"</code>, 
+                <code>role="tabpanel"</code>, and additional <code>aria-</code> attributes in order to convey their structure, 
+                functionality, and current state to users of assistive technologies. It's recommended to use <code>&lt;button&gt;</code> 
+                elements for the tabs, like this example and the one above. However, if you're using <code>&lt;nav&gt;</code>, you 
+                shouldn't add <code>role="tablist"</code> directly to it, as this would override the element's native role as a 
+                navigation landmark. Instead, switch to an alternative element, like a <code>&lt;div&gt;</code>, and wrap the 
+                <code>&lt;nav&gt;</code> around it.</p>
+
+            <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Profile</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true">Contact</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the home tab.</strong> Takes you miles high, 
+                        so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my 
+                        head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my 
+                        crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up 
+                        cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the profile tab.</strong> You got the finest 
+                        architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that 
+                        one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, 
+                        I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! 
+                        But you'd rather get wasted.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the contact tab.</strong> Her love is like 
+                        a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and 
+                        the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm 
+                        walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. 
+                        Stinging like a bee I earned my stripes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- The tabs plugin also works with pills -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 15</h3>
+
+            <p class="fs-5 mb-3">The tabs plugin also works with pills.</p>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the home tab.</strong> Takes you miles high, 
+                        so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my 
+                        head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my 
+                        crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up 
+                        cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the profile tab.</strong> You got the finest 
+                        architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that 
+                        one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, 
+                        I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! 
+                        But you'd rather get wasted.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <p>
+                        <strong>Placeholder content for the tab panel. This one relates to the contact tab.</strong> Her love is like 
+                        a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and 
+                        the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm 
+                        walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. 
+                        Stinging like a bee I earned my stripes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- And with vertical pills -->
+
+        <div class="container">
+            <h3 class="mb-2">Navs and Tabs Component Example 16</h3>
+
+            <p class="fs-5 mb-3">And with vertical pills.</p>
+
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-control="v-pills-home" aria-selected="true">Home<button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-control="v-pills-profile" aria-selected="false">Profile<button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-control="v-pills-messages" aria-selected="false">Messages<button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-control="v-pills-settings" aria-selected="false">Settings<button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <p>
+                            <strong>Placeholder content for the tab panel. This one relates to the home tab.</strong> Saw you downtown 
+                            singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that wears 
+                            the crown. Yes, we make angels cry, raining down on earth from up above. Wanna see the show in 3D, a movie. 
+                            Do you ever feel, feel so paper thin. It’s a yes or no, no maybe.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <p>
+                            <strong>Placeholder content for the tab panel. This one relates to the profile tab.</strong> Takes you miles 
+                            high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding 
+                            in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for 
+                            my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn 
+                            it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <p>
+                            <strong>Placeholder content for the tab panel. This one relates to the messages tab.</strong> You got the 
+                            finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never 
+                            planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. 
+                            I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night 
+                            like the 4th of July! But you'd rather get wasted.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <p>
+                            <strong>Placeholder content for the tab panel. This one relates to the settings tab.</strong> Her love is 
+                            like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the 
+                            muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it 
+                            all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. 
+                            Catch her if you can. Stinging like a bee I earned my stripes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
